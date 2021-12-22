@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #eee;
+  background-color: #111;
+  font-family: "Copperplate", "Papyrus", "fantasy";
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #111;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #eee;
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.cards {
+  padding: 40px 80px;
+}
+.example {
+  margin: 30px 50px;
+}
+header {
+  margin-top: 40px;
+  border: 2px solid white;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  padding: 30px 50px;
+}
+header .logo {
+  background: #111;
+  position: absolute;
+  top: -32px;
+  height: 50px;
+  padding: 0 5px 0 0;
+}
+header .graves {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  height: 60px;
+}
+.container {
+  border: 3px solid #eee;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.inner {
+  border: 3px solid #eee;
+  position: fixed;
+  inset: 3px;
+  margin: 1px;
+}
+.inner2 {
+  border: 3px solid #eee;
+  position: fixed;
+  inset: 7px;
+  margin: 1px;
+}
+.flex {
+  display: flex;
+}
+.card1 {
+  border: 2px solid #eee;
+  border-top: none;
+  padding: 20px 40px;
+}
+.point {
+  position: relative;
+  width: 250px;
+  display: inline-block;
+  margin: 10px 50px 0 0;
+}
+.flex h2 {
+  margin-top: 50px;
+  font-size: 2.5rem;
+}
+.point span {
+  position: absolute;
+  top: 2px;
+  right: 65px;
+  font-size: 8rem;
+  color: #111;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 60s linear infinite;
+  animation: rotating 60s linear infinite;
+}
+
+.cross {
+  position: fixed;
+  top: 9px;
+  left: 9px;
+}
+.cross2 {
+  position: fixed;
+  bottom: 9px;
+  right: 9px;
+  transform: rotate(180deg);
+}
+.cross3 {
+  position: fixed;
+  top: 9px;
+  right: 9px;
+  transform: rotate(90deg);
+}
+.cross4 {
+  position: fixed;
+  bottom: 9px;
+  left: 9px;
+  transform: rotate(270deg);
+}
