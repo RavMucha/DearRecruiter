@@ -6,7 +6,7 @@
 
 body {
   color: #eee;
-  background-color: #111;
+  background-color: #000;
   font-family: "Copperplate", "Papyrus", "fantasy";
   font-size: 1.4em;
   letter-spacing: 2px;
@@ -31,6 +31,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .cards {
   padding: 40px 80px;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column;
 }
 .example {
   margin: 30px 50px;
@@ -43,7 +47,7 @@ header {
   padding: 30px 50px;
 }
 header .logo {
-  background: #111;
+  background: #000;
   position: absolute;
   top: -32px;
   height: 50px;
@@ -52,8 +56,8 @@ header .logo {
 header .graves {
   position: absolute;
   bottom: -2px;
-  right: -2px;
-  height: 60px;
+  right: -1px;
+  height: 250px;
 }
 .container {
   border: 3px solid #eee;
@@ -78,10 +82,13 @@ header .graves {
 .flex {
   display: flex;
 }
-.card1 {
-  border: 2px solid #eee;
+.card {
+  border: 0.5px solid #eee;
+  background-color: #000;
   border-top: none;
   padding: 20px 40px;
+  height: 100vh;
+  scroll-snap-align: center;
 }
 .point {
   position: relative;
