@@ -20,22 +20,24 @@
   <body>
     <div class="cards">
       <header class="main-card">
-        <img class="logo" src="Assets/Deer.svg" alt="logo" /> <br/>It is with great
+        <img class="logo" src="Assets/Deer.svg" alt="logo" /> <br/>
+        <p>It is with great
         grief and sadness that I have to inform of the amount of
         <b>LinkedIn</b>
         messages, mails, texts and phone calls I receive, with offers not
         matching my field of expertise, experience, or basically anything that I
         mention about myself - this has gotten very much out of hand.
-        <br />
+        </p><p>
         Therefore, I have decided to do what Web Devs do: create a website.
         Before you text me, call me, send me anything, or come knocking on my
         door, please, at least skimm the balow.
-        <br />
+        </p><p>
         The list goes from a general "U should already know that, but just in
         case" to "here's what I do and what I expect." If your job offer doesn't
         match up with anything of the below, then let's just skip the
         interaction, cuz it's already dead to me (get it? Dead - obituary themed
         webside - heh).
+        </p>
         <div class="scroll_indicator">
             <span class="scroll_arrows first"></span>
             <span class="scroll_arrows second"></span>
@@ -43,6 +45,7 @@
       </div>
         <img class="graves" src="Assets/graves.svg" alt="graves" />
       </header>
+      <div class="card-container">
       <div id="first-card" class="card">
         <div class="flex">
           <div class="point">
@@ -50,6 +53,7 @@
           </div>
           <h2>The relation between JAVA and JavaScript is similar to this:</h2>
         </div>
+        <div class="flex-img">
         <img
           class="car example"
           height="200px"
@@ -62,12 +66,16 @@
           src="Assets/carpet.svg"
           alt="carpet"
         />
+      </div>
         <p>
           Both have the word "JAVA" in the name, same as the word "CAR" appears
           in the word "CARPET"... and that's about it. Knowing one doesn't mean
           that you know the other, both have different uses.
         </p>
-        <div class="prev" onclick="prev()">&lt; PREV</div>
+        <br>
+        <p>
+          <b>TL;DR:</b> I'm a JavaScript Developer - I do websites and Web Apps.
+        </p>
         <div class="next" onclick="next()">NEXT &gt;</div>
       </div>
       <div class="card">
@@ -76,19 +84,22 @@
 2
           </div>
           <h2>
-            Do U send race car driver job offers to taxi drivers??????????
+            Can a taxi driver fix a truck?
           </h2>
         </div>
+        <div class="flex-img">
         <img
-          class="carpet example"
+          class="example"
           height="200px"
-          src="Assets/taxi.svg"
-          alt="carpet"
+          src="Assets/fix.svg"
+          alt="car_fix"
         />
+      </div>
         <p>
-          Both have the word "JAVA" in the name, same as the word "CAR" appears
-          in the word "CARPET"... and that's about it. Knowing one doesn't mean
-          that you know the other, both have different uses.
+          Maybe, but chances are slim. He might change a tire, do a quick fix, but he probably won't swap the entire engine. Same goes for BackEnds; don't send BackEnd Dev job offers to FrontEnd Devs! 
+        </p>
+        <p>
+          <b>TL;DR:</b> I'm a FrontEnd Developer - I might do something on the BackEnd, but I don't, nor want to do servers and databases day2day.
         </p>
         <div class="prev" onclick="prev()">&lt; PREV</div>
         <div class="next" onclick="next()">NEXT &gt;</div>
@@ -143,17 +154,25 @@ U sure, a beach, free food, models in bikinis, relocation package, stock options
           PRESS ME!!!
         </strong>
         <div class="prev" onclick="prev()">&lt; PREV</div>
-        <div class="next" onclick="next()">NEXT &gt;</div>
       </div>
-      
+      <ul>
+        <li class="dots active" id="dot-0"></li>
+        <li class="dots" id="dot-1"></li>
+        <li class="dots" id="dot-2"></li>
+        <li class="dots" id="dot-3"></li>
+        <li class="dots" id="dot-4"></li>
+      </ul>
   </div>
+</div>
+
+
     <img class="cross" src="Assets/cross.svg" alt="cross" />
     <img class="cross2" src="Assets/cross.svg" alt="cross" />
     <img class="cross3" src="Assets/cross.svg" alt="cross" />
     <img class="cross4" src="Assets/cross.svg" alt="cross" />
     <div class="container">
       <div class="inner"><div class="inner2"></div></div>
-    </div>
+    </div>    
     <img id="zombie" src="/Assets/zombie.jpg" alt="zombie" />
     <script src="./script.js"></script>
   </body>

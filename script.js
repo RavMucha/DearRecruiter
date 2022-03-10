@@ -2,28 +2,30 @@ var count = 0;
 var scream = new Audio("./Assets/GIRLS.wav");
 
 function next() {
-  if (count > 3) {
-    count = 0;
-  } else {
     count++;
-  }
   let cards = document.getElementsByClassName("card");
   for (c of cards) {
     c.style.display = "none";
   }
+  let dots = document.getElementsByClassName("dots");
+  for (d of dots) {
+    d.classList.remove("active");
+  }
+  document.getElementById("dot-" + count).classList.add("active");
   document.getElementsByClassName("card")[count].style.display = "block";
 }
 
 function prev() {
-  if (count <= 0) {
-    count = 4;
-  } else {
     count--;
-  }
   let cards = document.getElementsByClassName("card");
   for (c of cards) {
     c.style.display = "none";
   }
+  let dots = document.getElementsByClassName("dots");
+  for (d of dots) {
+    d.classList.remove("active");
+  }
+  document.getElementById("dot-" + count).classList.add("active");
   document.getElementsByClassName("card")[count].style.display = "block";
 }
 
