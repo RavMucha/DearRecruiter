@@ -1,4 +1,5 @@
 var count = 0;
+var scream = new Audio("./Assets/GIRLS.wav");
 
 function next() {
   if (count > 3) {
@@ -28,7 +29,6 @@ function prev() {
 
 function zombie() {
   document.getElementById("zombie").style.display = "block";
-  let scream = new Audio("./Assets/GIRLS.wav");
   scream.play();
   scream.volume = 1.0;
   setTimeout(() => {
