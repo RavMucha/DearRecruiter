@@ -19,8 +19,8 @@
   </head>
   <body>
     <div class="cards">
-      <header class="card">
-        <img class="logo" src="Assets/Deer.svg" alt="logo" /> It is with great
+      <header class="main-card">
+        <img class="logo" src="Assets/Deer.svg" alt="logo" /> <br/>It is with great
         grief and sadness that I have to inform of the amount of
         <b>LinkedIn</b>
         messages, mails, texts and phone calls I receive, with offers not
@@ -36,15 +36,17 @@
         match up with anything of the below, then let's just skip the
         interaction, cuz it's already dead to me (get it? Dead - obituary themed
         webside - heh).
+        <div class="scroll_indicator">
+            <span class="scroll_arrows first"></span>
+            <span class="scroll_arrows second"></span>
+            <span class="scroll_arrows third"></span>
+      </div>
         <img class="graves" src="Assets/graves.svg" alt="graves" />
       </header>
-
-      <div class="card">
+      <div id="first-card" class="card">
         <div class="flex">
           <div class="point">
-            <img class="rotating" src="Assets/globe.svg" alt="globe" /><span
-              >1</span
-            >
+            1
           </div>
           <h2>The relation between JAVA and JavaScript is similar to this:</h2>
         </div>
@@ -65,24 +67,18 @@
           in the word "CARPET"... and that's about it. Knowing one doesn't mean
           that you know the other, both have different uses.
         </p>
+        <div class="prev" onclick="prev()">&lt; PREV</div>
+        <div class="next" onclick="next()">NEXT &gt;</div>
       </div>
       <div class="card">
         <div class="flex">
           <div class="point">
-            <img class="rotating" src="Assets/globe.svg" alt="globe" /><span
-              >2</span
-            >
+2
           </div>
           <h2>
             Do U send race car driver job offers to taxi drivers??????????
           </h2>
         </div>
-        <img
-          class="car example"
-          height="200px"
-          src="Assets/car.svg"
-          alt="car"
-        />
         <img
           class="carpet example"
           height="200px"
@@ -94,26 +90,26 @@
           in the word "CARPET"... and that's about it. Knowing one doesn't mean
           that you know the other, both have different uses.
         </p>
+        <div class="prev" onclick="prev()">&lt; PREV</div>
+        <div class="next" onclick="next()">NEXT &gt;</div>
       </div>
       <div class="card">
         <div class="flex">
           <div class="point">
-            <img class="rotating" src="Assets/globe.svg" alt="globe" /><span
-              >3</span
-            >
+3
           </div>
           <h2>Where, what and for how much?</h2>
         </div>
         <p>
 There's like a million job offers sent my way every freakin' day. Stand out from at least some of them, have basic info: WHO is hiring (I'm not going to work for shady gambling companies, start-ups on life support etc.), WHAT is the tech stack ("Angular!" is not an answer, listing all the 36 languages that the company uses is another spectrum of also not an answer), WHAT am I supposed to deliver ("searching for a developer with expereience to do AI, ML and deliver extraordinary value to further the company's goal of creating <buzzwords>" is worthless marketing slogans that insult me, quite franky. WHAT EXACTLY? A web app, a website, PWA or not, SPA or not, one monolith or modular, stack is settled, or to be picked by the team?) and HOW MUCH they pay (yeah, competitive salary, negotiable is a different way of saying either "we have no idea about the industry" or "we're cheap and searching for a deal" - count me out).
         </p>
+        <div class="prev" onclick="prev()">&lt; PREV</div>
+        <div class="next" onclick="next()">NEXT &gt;</div>
       </div>
       <div class="card">
         <div class="flex">
           <div class="point">
-            <img class="rotating" src="Assets/globe.svg" alt="globe" /><span
-              >4</span
-            >
+4
           </div>
           <h2>The relation between JAVA and JavaScript is similar to this:</h2>
         </div>
@@ -133,35 +129,24 @@ There's like a million job offers sent my way every freakin' day. Stand out from
 Willing to relocate? No.
 U sure, a beach, free food, models in bikinis, relocation package, stock options? Still no.
         </p>
+        <div class="prev" onclick="prev()">&lt; PREV</div>
+        <div class="next" onclick="next()">NEXT &gt;</div>
       </div>
       <div class="card">
         <div class="flex">
           <div class="point">
-            <img class="rotating" src="Assets/globe.svg" alt="globe" /><span
-              >5</span
-            >
+5
           </div>
           <h2>The relation between JAVA and JavaScript is similar to this:</h2>
         </div>
-        <img
-          class="car example"
-          height="200px"
-          src="Assets/car.svg"
-          alt="car"
-        />
-        <img
-          class="carpet example"
-          height="200px"
-          src="Assets/carpet.svg"
-          alt="carpet"
-        />
-        <p>
-          Both have the word "JAVA" in the name, same as the word "CAR" appears
-          in the word "CARPET"... and that's about it. Knowing one doesn't mean
-          that you know the other, both have different uses.
-        </p>
+        <strong onclick="zombie()">
+          PRESS ME!!!
+        </strong>
+        <div class="prev" onclick="prev()">&lt; PREV</div>
+        <div class="next" onclick="next()">NEXT &gt;</div>
       </div>
-    </div>
+      
+  </div>
     <img class="cross" src="Assets/cross.svg" alt="cross" />
     <img class="cross2" src="Assets/cross.svg" alt="cross" />
     <img class="cross3" src="Assets/cross.svg" alt="cross" />
@@ -169,5 +154,7 @@ U sure, a beach, free food, models in bikinis, relocation package, stock options
     <div class="container">
       <div class="inner"><div class="inner2"></div></div>
     </div>
+    <img id="zombie" src="/Assets/zombie.jpg" alt="zombie" />
+    <script src="./script.js"></script>
   </body>
 </html>
