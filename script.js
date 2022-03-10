@@ -2,7 +2,7 @@ var count = 0;
 var scream = new Audio("./Assets/GIRLS.wav");
 
 function next() {
-    count++;
+  count++;
   let cards = document.getElementsByClassName("card");
   for (c of cards) {
     c.style.display = "none";
@@ -16,7 +16,7 @@ function next() {
 }
 
 function prev() {
-    count--;
+  count--;
   let cards = document.getElementsByClassName("card");
   for (c of cards) {
     c.style.display = "none";

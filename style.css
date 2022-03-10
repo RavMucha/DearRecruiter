@@ -57,6 +57,7 @@ header .graves {
   right: -1px;
   height: 400px;
   opacity: 0.02;
+  -webkit-filter: blur(3px);
   filter: blur(3px);
 }
 .container {
@@ -114,6 +115,9 @@ header .graves {
   background-color: rgba(24, 29, 43, 0.5);
   backdrop-filter: blur(30px) saturate(50%);
   -webkit-backdrop-filter: blur(30px) saturate(50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -168,6 +172,7 @@ header.main-card {
   bottom: 0;
   width: 100vw;
   height: 100vh;
+  -o-object-fit: cover;
   object-fit: cover;
   display: none;
 }
@@ -183,6 +188,9 @@ header.main-card {
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .prev {
@@ -192,6 +200,9 @@ header.main-card {
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .prev:hover,
@@ -209,8 +220,6 @@ header.main-card {
 
 .scroll_arrows {
   display: block;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 
   border-right: 1.5px solid #ddd;
@@ -229,7 +238,6 @@ header.main-card {
 .second,
 .third {
   -webkit-animation: mouse-scroll 1s infinite;
-  -moz-animation: mouse-scroll 1s infinite;
   animation: mouse-scroll 1s infinite;
 }
 
@@ -239,6 +247,7 @@ header.main-card {
   -webkit-animation-direction: alternate;
 
   animation-direction: alternate;
+  -webkit-animation-delay: alternate;
   animation-delay: alternate;
 }
 
@@ -265,28 +274,6 @@ header.main-card {
 }
 
 @-webkit-keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes mouse-scroll {
   0% {
     opacity: 0;
   }
@@ -347,7 +334,8 @@ li {
   transform: scale(1.3);
 }
 
-div > p, header > p  {
+div > p,
+header > p {
   line-height: 1.5;
   font-weight: 200;
 }
@@ -356,7 +344,8 @@ div > p {
   margin: 0 10vw;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 300;
 }
 
