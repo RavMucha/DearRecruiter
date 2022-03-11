@@ -365,7 +365,7 @@ p b {
 .inner-flex {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   height: 100%;
   margin: 30px;
 }
