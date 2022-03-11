@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .cards {
-  padding: 5vh 10vw;
+  padding: 4vh 8vw;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   display: flex;
@@ -45,14 +45,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 header .logo {
-  height: 80px;
+  width: 50%;
   margin-bottom: 30px;
 }
 header .graves {
   position: absolute;
   bottom: -2px;
   right: -1px;
-  height: 400px;
+  width: 40%;
   opacity: 0.02;
   -webkit-filter: blur(3px);
   filter: blur(3px);
@@ -84,7 +84,7 @@ header .graves {
 }
 .flex-img {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-content: center;
   justify-content: center;
   margin: 40px;
@@ -106,7 +106,7 @@ header .graves {
   border: 1px solid #313747d5;
   padding: 40px 60px 120px 60px !important;
   margin-bottom: 20px;
-  height: 90vh;
+  height: 100%;
   border-radius: 25px;
   background-color: rgba(24, 29, 43, 0.5);
   backdrop-filter: blur(30px) saturate(50%);
@@ -320,6 +320,7 @@ strong:hover {
 
 .card-container {
   position: relative;
+  height: 100%;
 }
 
 ul {
@@ -348,6 +349,16 @@ ul {
 .active {
   background-color: #b9c2ddd5;
   transform: scale(1.3);
+}
+
+.svg-img {
+  max-height: 200px;
+  width: 60%;
+}
+
+.svg-img-2 {
+  max-height: 200px;
+  width: 50%;
 }
 
 div > p,
