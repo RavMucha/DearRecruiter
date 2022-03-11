@@ -401,6 +401,10 @@ p b {
   .card {
     transform: scale(0.8);
   }
+  ul {
+    transform: scale(0.5);
+    bottom: 150px;
+  }
 }
 
 @media screen and (max-width: 400px) {
