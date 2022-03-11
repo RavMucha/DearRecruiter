@@ -111,6 +111,7 @@ header .graves {
   border: 1px solid #313747d5;
   padding: 40px 60px 120px 60px !important;
   margin-bottom: 20px;
+  height: 85vh;
   border-radius: 25px;
   background-color: rgba(24, 29, 43, 0.5);
   backdrop-filter: blur(30px) saturate(50%);
@@ -237,13 +238,13 @@ header.main-card {
 .first,
 .second,
 .third {
-  -webkit-animation: mouse-scroll 1s infinite;
-  animation: mouse-scroll 1s infinite;
+  -webkit-animation: mouse-scroll 1.5s infinite;
+  animation: mouse-scroll 1.5s infinite;
 }
 
 .first {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
   -webkit-animation-direction: alternate;
 
   animation-direction: alternate;
@@ -252,22 +253,22 @@ header.main-card {
 }
 
 .second {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
   -webkit-animation-direction: alternate;
 
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
   animation-direction: alternate;
 
   margin-top: -6px;
 }
 
 .third {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
   -webkit-animation-direction: alternate;
 
-  animation-delay: 0.3s;
+  animation-delay: 0.6s;
   animation-direction: alternate;
 
   margin-top: -6px;
@@ -297,9 +298,16 @@ header.main-card {
 }
 
 strong {
-  border: 10px solid white;
+  border: 2px solid white;
+  border-radius: 20px;
   padding: 30px 50px;
   margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+strong:hover {
+  background-color: #313747d5;
+  transform: scale(1.1);
 }
 
 .card-container {
@@ -351,6 +359,14 @@ h2 {
 
 p b {
   font-weight: 400;
+}
+
+.inner-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1000px) {
