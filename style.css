@@ -14,7 +14,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-size: 1.4em;
+  font-size: 1.35em;
+  line-height: 2;
   letter-spacing: 2px;
 }
 
@@ -344,7 +345,7 @@ li {
 
 div > p,
 header > p {
-  line-height: 1.5;
+  line-height: 1.8;
   font-weight: 200;
 }
 
@@ -366,7 +367,7 @@ p b {
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 40px;
+  margin: 30px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -381,5 +382,11 @@ p b {
   }
   .card {
     transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    transform: scale(0.5);
   }
 }
