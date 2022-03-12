@@ -16,7 +16,7 @@ body {
   background-size: cover;
   font-size: 1.35em;
   line-height: 2;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
 body::-webkit-scrollbar {
@@ -130,7 +130,6 @@ header.main-card {
   margin-right: 1.5rem;
   margin-bottom: 0.5rem;
   aspect-ratio: 1/1;
-  border-radius: 50%;
   width: 100px;
   height: 100px;
   /* border: 0.5px solid #313747d5; */
@@ -389,26 +388,166 @@ p b {
 }
 
 @media screen and (max-width: 1000px) {
+  body {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .flex h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+  }
   .cards {
-    padding: 2vw 4vh;
+    padding: 4vh 4vw;
+  }
+  .main-card {
+    margin-top: 10px;
+    padding: 25px 50px 80px 50px !important;
+    margin-bottom: 40px;
+  }
+  .card {
+    padding: 10px 20px 100px 20px !important;
+    margin-bottom: 10px;
+  }
+  .next {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    font-size: 1.6rem;
+  }
+  .prev {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-size: 1.6rem;
+  }
+  .dots {
+    height: 10px;
+    width: 10px;
+    margin-left: 20px;
+  }
+  ul {
+    bottom: 35px;
+  }
+  .point {
+    font-size: 4rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    aspect-ratio: 1/1;
+    width: 100px;
+    height: 100px;
+  }
+  div > p {
+    margin: 0 40px;
+  }
+  .scroll_indicator {
+    margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
+  body {
+    font-size: 1.1em;
+  }
+  .flex h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+  .cards {
+    padding: 3vh 4vw;
+  }
   .main-card {
-    transform: scale(0.8);
+    margin-top: 10px;
+    padding: 20px 40px 70px 40px !important;
+    margin-bottom: 20px;
   }
   .card {
-    transform: scale(0.8);
+    padding: 5px 15px 90px 15px !important;
+    margin-bottom: 10px;
+  }
+  .next {
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    font-size: 1.3rem;
+  }
+  .prev {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+    font-size: 1.3rem;
+  }
+  .dots {
+    height: 10px;
+    width: 10px;
+    margin-left: 10px;
   }
   ul {
-    transform: scale(0.5);
-    bottom: 150px;
+    bottom: 17px;
+  }
+  .point {
+    font-size: 3.5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    aspect-ratio: 1/1;
+  }
+  div > p {
+    margin: 0 30px;
+  }
+  .scroll_indicator {
+    margin-top: 5px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  img {
-    transform: scale(0.5);
+  body {
+    font-size: 1em;
+  }
+  .flex h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+  }
+  .cards {
+    padding: 2vh 5vw;
+  }
+  .main-card {
+    margin-top: 10px;
+    padding: 10px 20px 60px 20px !important;
+    margin-bottom: 10px;
+  }
+  .card {
+    padding: 5px 10px 60px 10px !important;
+    margin-bottom: 10px;
+  }
+  .next {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    font-size: 1.1rem;
+  }
+  .prev {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    font-size: 1.1rem;
+  }
+  .dots {
+    height: 8px;
+    width: 8px;
+    margin-left: 8px;
+  }
+  ul {
+    bottom: 15px;
+  }
+  .point {
+    font-size: 3rem;
+  }
+  div > p {
+    margin: 0 20px;
+  }
+  .scroll_indicator {
+    margin-top: 5px;
   }
 }
