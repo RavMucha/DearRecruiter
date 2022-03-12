@@ -84,7 +84,6 @@ header .graves {
 }
 .flex-img {
   display: flex;
-  gap: 1rem;
   align-content: center;
   justify-content: center;
   margin: 40px;
@@ -327,7 +326,7 @@ header.main-card {
   margin-bottom: 15px;
 }
 
-#copyright strong {
+strong {
   width: 100%;
   border: 2px solid white;
   border-radius: 20px;
@@ -348,7 +347,7 @@ strong:hover {
 
 ul {
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -454,7 +453,7 @@ p b {
     margin: 0 8px;
   }
   ul {
-    bottom: 25px;
+    bottom: 15px;
   }
   .point {
     font-size: 4rem;
@@ -519,7 +518,7 @@ p b {
     margin: 0 4px;
   }
   ul {
-    bottom: 18px;
+    bottom: 8px;
   }
   .point {
     font-size: 3rem;
@@ -587,7 +586,7 @@ p b {
     margin: 0 3px;
   }
   ul {
-    bottom: 16px;
+    bottom: 6px;
   }
   div > p {
     margin: 0;
