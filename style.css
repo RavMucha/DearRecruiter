@@ -122,16 +122,13 @@ header.main-card {
 }
 
 .point {
-  font-family: "Papyrus", "fantasy";
-  font-size: 4.5rem;
+  font-size: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-right: 50px;
+  margin-bottom: 25px;
   aspect-ratio: 1/1;
-  width: 100px;
-  height: 100px;
   /* border: 0.5px solid #313747d5; */
   /* backdrop-filter: blur(1px) saturate(70%);
   -webkit-backdrop-filter: blur(1px) saturate(70%); */
@@ -421,7 +418,7 @@ p b {
     margin-bottom: 40px;
   }
   .card {
-    padding: 10px 20px 100px 20px !important;
+    padding: 10px 50px 100px 50px !important;
     margin-bottom: 10px;
   }
   .next {
@@ -450,11 +447,8 @@ p b {
   }
   .point {
     font-size: 4rem;
-    margin-right: 0;
-    margin-bottom: 0;
-    aspect-ratio: 1/1;
-    width: 100px;
-    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
   div > p {
     margin: 0 40px;
@@ -473,6 +467,10 @@ p b {
     margin-bottom: 5px;
     font-size: 1.5rem;
   }
+  header .logo {
+    width: 70%;
+    margin-bottom: 20px;
+  }
   .cards {
     padding: 3vh 4vw;
   }
@@ -482,8 +480,12 @@ p b {
     margin-bottom: 20px;
   }
   .card {
-    padding: 5px 15px 90px 15px !important;
+    padding: 20px 40px 80px 40px !important;
     margin-bottom: 10px;
+  }
+  .flex-img {
+    gap: 0.5rem;
+    margin: 30px;
   }
   .next {
     position: absolute;
@@ -510,13 +512,12 @@ p b {
     bottom: 17px;
   }
   .point {
-    font-size: 3.5rem;
-    margin-right: 0;
-    margin-bottom: 0;
-    aspect-ratio: 1/1;
+    font-size: 3rem;
+    margin-right: 15px;
+    margin-bottom: 5px;
   }
   div > p {
-    margin: 0 30px;
+    margin: 0 45px;
   }
   .scroll_indicator {
     margin-top: 5px;
@@ -530,10 +531,18 @@ p b {
   body {
     font-size: 1em;
   }
+  header .logo {
+    width: 95%;
+    margin-bottom: 15px;
+  }
   .flex h2 {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 1.3rem;
+  }
+  .flex-img {
+    gap: 0.5rem;
+    margin: 25px;
   }
   .cards {
     padding: 2vh 5vw;
@@ -544,19 +553,19 @@ p b {
     margin-bottom: 10px;
   }
   .card {
-    padding: 5px 10px 60px 10px !important;
+    padding: 10px 20px 60px 20px !important;
     margin-bottom: 10px;
   }
   .next {
     position: absolute;
     bottom: 15px;
-    right: 30px;
+    right: 20px;
     font-size: 1.1rem;
   }
   .prev {
     position: absolute;
     bottom: 15px;
-    left: 30px;
+    left: 20px;
     font-size: 1.1rem;
   }
   .nav_arrows {
@@ -571,11 +580,8 @@ p b {
   ul {
     bottom: 15px;
   }
-  .point {
-    font-size: 3rem;
-  }
   div > p {
-    margin: 0 20px;
+    margin: 0;
   }
   .scroll_indicator {
     margin-top: 5px;
