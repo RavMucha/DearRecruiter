@@ -485,7 +485,7 @@ p b {
   }
   .flex-img {
     gap: 0.5rem;
-    margin: 30px;
+    margin: 20px 30px;
   }
   .next {
     position: absolute;
@@ -517,7 +517,7 @@ p b {
     margin-bottom: 5px;
   }
   div > p {
-    margin: 0 45px;
+    margin: 0 30px;
   }
   .scroll_indicator {
     margin-top: 5px;
@@ -542,7 +542,7 @@ p b {
   }
   .flex-img {
     gap: 0.5rem;
-    margin: 25px;
+    margin: 20px 1px;
   }
   .cards {
     padding: 2vh 5vw;
