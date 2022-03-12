@@ -144,31 +144,31 @@ header.main-card {
   font-size: 2.25rem;
 }
 
+.crosses {
+  opacity: 0.9;
+}
+
 .cross {
   position: fixed;
   top: 10px;
   left: 10px;
-  opacity: 0.9;
 }
 .cross2 {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  opacity: 0.9;
   transform: rotate(180deg);
 }
 .cross3 {
   position: fixed;
   top: 10px;
   right: 10px;
-  opacity: 0.9;
   transform: rotate(90deg);
 }
 .cross4 {
   position: fixed;
   bottom: 10px;
   left: 10px;
-  opacity: 0.9;
   transform: rotate(270deg);
 }
 
@@ -229,7 +229,6 @@ header.main-card {
 .scroll_arrows {
   display: block;
   transform: rotate(45deg);
-
   border-right: 1.5px solid #ddd;
   border-bottom: 1.5px solid #ddd;
   margin: 0 0 3px 4px;
@@ -238,13 +237,29 @@ header.main-card {
   height: 25px;
 }
 
+.nav_arrows {
+  display: inline-block;
+  border-right: 2.5px solid #ddd;
+  border-bottom: 2.5px solid #ddd;
+  width: 20px;
+  height: 20px;
+}
+.back {
+  transform: rotate(135deg);
+}
+.forward {
+  transform: rotate(-45deg);
+}
+
 .first {
   margin-top: 1px;
 }
 
 .first,
 .second,
-.third {
+.third,
+.back,
+.forward {
   -webkit-animation: mouse-scroll 1.5s infinite;
   animation: mouse-scroll 1.5s infinite;
 }
@@ -421,6 +436,10 @@ p b {
     left: 50px;
     font-size: 1.6rem;
   }
+  .nav_arrows {
+    width: 18px;
+    height: 18px;
+  }
   .dots {
     height: 10px;
     width: 10px;
@@ -478,6 +497,10 @@ p b {
     left: 40px;
     font-size: 1.3rem;
   }
+  .nav_arrows {
+    width: 14px;
+    height: 14px;
+  }
   .dots {
     height: 10px;
     width: 10px;
@@ -497,6 +520,9 @@ p b {
   }
   .scroll_indicator {
     margin-top: 5px;
+  }
+  .crosses {
+    width: 50px;
   }
 }
 
@@ -533,6 +559,10 @@ p b {
     left: 30px;
     font-size: 1.1rem;
   }
+  .nav_arrows {
+    width: 12px;
+    height: 12px;
+  }
   .dots {
     height: 8px;
     width: 8px;
@@ -549,5 +579,8 @@ p b {
   }
   .scroll_indicator {
     margin-top: 5px;
+  }
+  .crosses {
+    width: 40px;
   }
 }
