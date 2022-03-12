@@ -1,5 +1,4 @@
 var count = 0;
-var scream = new Audio("./Assets/GIRLS.wav");
 var cards = document.getElementsByClassName("card");
 var dots = document.getElementsByClassName("dots");
 
