@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #eee;
   background-color: #000;
@@ -14,9 +18,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-size: 1.35em;
-  line-height: 2;
-  letter-spacing: 0.5px;
+  font-size: 1.2em;
 }
 
 body::-webkit-scrollbar {
@@ -347,7 +349,7 @@ strong:hover {
 
 ul {
   position: absolute;
-  bottom: 40px;
+  bottom: 35px;
   display: flex;
   list-style: none;
   justify-content: center;
@@ -412,8 +414,7 @@ p b {
 
 @media screen and (max-width: 1000px) {
   body {
-    font-size: 1.2em;
-    line-height: 1.5;
+    font-size: 1.1em;
   }
   .flex h2 {
     margin-top: 5px;
@@ -453,7 +454,7 @@ p b {
     margin: 0 8px;
   }
   ul {
-    bottom: 15px;
+    bottom: 10px;
   }
   .point {
     font-size: 4rem;
@@ -470,7 +471,7 @@ p b {
 
 @media screen and (max-width: 650px) {
   body {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .flex h2 {
     margin-top: 5px;
@@ -518,7 +519,7 @@ p b {
     margin: 0 4px;
   }
   ul {
-    bottom: 8px;
+    bottom: 5px;
   }
   .point {
     font-size: 3rem;
@@ -537,9 +538,6 @@ p b {
 }
 
 @media screen and (max-width: 400px) {
-  body {
-    font-size: 1em;
-  }
   header .logo {
     width: 95%;
     margin-bottom: 15px;
@@ -586,7 +584,7 @@ p b {
     margin: 0 3px;
   }
   ul {
-    bottom: 6px;
+    bottom: 3px;
   }
   div > p {
     margin: 0;
