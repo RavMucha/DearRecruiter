@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb:hover {
   flex-direction: column;
 }
 
-header .logo {
+header #logo {
   width: 50%;
   margin-bottom: 30px;
 }
@@ -478,7 +478,7 @@ p b {
     margin-bottom: 5px;
     font-size: 1.5rem;
   }
-  header .logo {
+  header #logo {
     width: 70%;
     margin-bottom: 20px;
   }
@@ -538,7 +538,7 @@ p b {
 }
 
 @media screen and (max-width: 400px) {
-  header .logo {
+  header #logo {
     width: 95%;
     margin-bottom: 15px;
   }

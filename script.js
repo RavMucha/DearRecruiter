@@ -1,7 +1,14 @@
 var count = 0;
 var cards = document.getElementsByClassName("card");
 var dots = document.getElementsByClassName("dots");
-
+gsap.from("#logo", { duration: 1, x: 100 });
+gsap.to("#logo", { duration: 1, x: 0 });
+gsap.from("#p1", { duration: 2, x: 100 });
+gsap.to("#p1", { duration: 2, x: 0 });
+gsap.from("#p2", { duration: 3, x: 100 });
+gsap.to("#p2", { duration: 3, x: 0 });
+gsap.from("#p3", { duration: 4, x: 100 });
+gsap.to("#p3", { duration: 4, x: 0 });
 function next() {
   count++;
   for (c of cards) {

@@ -5,12 +5,11 @@
   <meta charset="UTF-8" />
   <meta author="Rafał Mucha" />
   <meta name="description" content="Just a website with some info BEFORE you call me with a job offer" />
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <title>Dear Recruiter</title>
   <script>
     var scream = new Audio("./Assets/GIRLS.wav");
@@ -20,21 +19,21 @@
 <body>
   <div class="cards">
     <header class="main-card">
-      <img class="logo" src="Assets/Deer.svg" alt="logo" /> <br />
-      <p>It is with great
+      <img id="logo" src="Assets/Deer.svg" alt="logo" /> <br />
+      <p id="p1">It is with great
         grief that I have to inform U about the amount of
         <b>LinkedIn</b>
         messages, mails, texts and phone calls I receive, with offers not
         matching my field of expertise or experience - this has gotten very much out of hand.
       </p>
       <br>
-      <p>
+      <p id="p2">
         Therefore, I have created this website.
         <b>Before you text me, call me, send me anything, or come knocking on my
           door</b>, please, at least skimm the balow.
       </p>
       <br>
-      <p>
+      <p id="p3">
         If your job offer doesn't match up with anything of the below, then let's just skip the
         interaction, cuz there's no point.
       </p>
