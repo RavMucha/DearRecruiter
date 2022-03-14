@@ -469,6 +469,9 @@ p b {
     margin-right: 20px;
     margin-bottom: 10px;
   }
+  #bat {
+    z-index: 5;
+  }
   .scroll_indicator {
     margin-top: 10px;
   }

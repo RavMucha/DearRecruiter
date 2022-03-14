@@ -10,6 +10,10 @@ gsap.from("#p2", { duration: 1.4, y: 100 });
 gsap.to("#p2", { duration: 1.4, y: 0 });
 gsap.from("#p3", { duration: 1.6, y: 100 });
 gsap.to("#p3", { duration: 1.6, y: 0 });
+gsap.from("#bat", { duration: 4, x: 300, y: 300 });
+gsap.to("#bat", { duration: 4, x: 0, y: 0 });
+gsap.from("#bat", { duration: 4.1, opacity: 1, display: "inline" });
+gsap.to("#bat", { duration: 4.1, opacity: 0, display: "none" });
 
 document.getElementById("prev").classList.add("inactive");
 
@@ -84,6 +88,13 @@ function questionsShow(val) {
     q.style.display = "none";
   }
   document.getElementById("questions_" + val).style.display = "block";
-  gsap.from("#questions_" + val, { duration: 0.5, scale: 0.7 });
-  gsap.to("#questions_" + val, { duration: 0.5, scale: 1 });
+  gsap.from("#questions_" + val, {
+    duration: 0.5,
+    scale: 0.7,
+  });
+  gsap.to("#questions_" + val, {
+    duration: 0.5,
+    ease: "back.out(1.8)",
+    scale: 1,
+  });
 }
