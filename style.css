@@ -101,6 +101,10 @@ nav {
   justify-content: space-between;
   margin-top: 5vh;
   margin-bottom: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .inactive {
@@ -208,26 +212,14 @@ header.title-card {
   display: block;
 }
 
-#next {
-  display: flex;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: all 0.1s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+#next,
 #prev {
   display: flex;
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
+
 #prev:hover,
 #next:hover {
   transform: scale(1.2);
@@ -439,9 +431,7 @@ p b {
   .card-container {
     padding: 25px 50px 25px 50px !important;
   }
-  #next {
-    font-size: 1.6rem;
-  }
+  #next,
   #prev {
     font-size: 1.6rem;
   }
@@ -492,9 +482,7 @@ p b {
     width: 100%;
     margin: 20px 30px;
   }
-  #next {
-    font-size: 1.3rem;
-  }
+  #next,
   #prev {
     font-size: 1.3rem;
   }
@@ -545,9 +533,7 @@ p b {
   .card-container {
     padding: 10px 20px 10px 20px !important;
   }
-  #next {
-    font-size: 1.1rem;
-  }
+  #next,
   #prev {
     font-size: 1.1rem;
   }
