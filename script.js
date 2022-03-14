@@ -28,7 +28,7 @@ function next() {
   }
   document.getElementById("dot-" + count).classList.add("active");
   document.getElementsByClassName("card")[count].style.display = "block";
-  gsap.from("#card_" + count, { duration: 0.5, x: -30 });
+  gsap.from("#card_" + count, { duration: 0.5, x: -20 });
   gsap.to("#card_" + count, { duration: 0.5, x: 0 });
 }
 
@@ -50,7 +50,7 @@ function prev() {
   }
   document.getElementById("dot-" + count).classList.add("active");
   document.getElementsByClassName("card")[count].style.display = "block";
-  gsap.from("#card_" + count, { duration: 0.5, x: 30 });
+  gsap.from("#card_" + count, { duration: 0.5, x: 20 });
   gsap.to("#card_" + count, { duration: 0.5, x: 0 });
 }
 
