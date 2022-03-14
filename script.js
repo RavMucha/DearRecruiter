@@ -84,6 +84,6 @@ function questionsShow(val) {
     q.style.display = "none";
   }
   document.getElementById("questions_" + val).style.display = "block";
-  gsap.from("#questions_" + val, { duration: 0.5, y: -15 });
-  gsap.to("#questions_" + val, { duration: 0.5, y: 0 });
+  gsap.from("#questions_" + val, { duration: 0.5, scale: 0.7 });
+  gsap.to("#questions_" + val, { duration: 0.5, scale: 1 });
 }
