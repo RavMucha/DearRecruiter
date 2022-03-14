@@ -10,12 +10,12 @@ gsap.from("#p2", { duration: 1.4, y: 100 });
 gsap.to("#p2", { duration: 1.4, y: 0 });
 gsap.from("#p3", { duration: 1.6, y: 100 });
 gsap.to("#p3", { duration: 1.6, y: 0 });
-gsap.from("#bat", { duration: 4, x: 300, y: 300 });
-gsap.to("#bat", { duration: 4, x: 0, y: 0 });
-gsap.from("#bat", { duration: 4.1, opacity: 1, display: "inline" });
-gsap.to("#bat", { duration: 4.1, opacity: 0, display: "none" });
 
 document.getElementById("prev").classList.add("inactive");
+
+gsap.from("#bat", { duration: 4, x: 300, y: 300 });
+gsap.to("#bat", { duration: 4, x: 0, y: 0 });
+gsap.to("#bat", { duration: 4.1, opacity: 0, display: "none" });
 
 function next() {
   if (count < 5) {
