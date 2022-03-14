@@ -9,8 +9,17 @@ gsap.from("#p2", { duration: 3, x: 100 });
 gsap.to("#p2", { duration: 3, x: 0 });
 gsap.from("#p3", { duration: 4, x: 100 });
 gsap.to("#p3", { duration: 4, x: 0 });
+
+document.getElementById("prev").classList.add("inactive");
+
 function next() {
-  count++;
+  if (count < 5) {
+    count++;
+  }
+  if (count == 5) {
+    document.getElementById("next").classList.add("inactive");
+  }
+  document.getElementById("prev").classList.remove("inactive");
   for (c of cards) {
     c.style.display = "none";
   }
@@ -22,7 +31,15 @@ function next() {
 }
 
 function prev() {
-  count--;
+  if (count > 0) {
+    count--;
+  }
+  if (count == 0) {
+    document.getElementById("prev").classList.add("inactive");
+  }
+  if ((count, 5)) {
+    document.getElementById("next").classList.remove("inactive");
+  }
   for (c of cards) {
     c.style.display = "none";
   }

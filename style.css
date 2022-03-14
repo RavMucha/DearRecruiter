@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 
+:root {
+  --value: 40px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -91,26 +95,39 @@ header .graves {
   margin: 40px;
 }
 
+nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 5vh;
+  margin-bottom: 5px;
+}
+
+.inactive {
+  display: none;
+}
+
 .svg-match {
   width: 100%;
 }
 
-.main-card {
+.title-card {
   border: 1px solid #313747d5;
   margin-top: 50px;
   padding: 40px 80px 80px 80px !important;
   width: 100% !important;
+  height: 100%;
   margin-bottom: 40px;
   border-radius: 25px;
   background-color: rgba(24, 29, 43, 0.5);
   backdrop-filter: blur(30px) saturate(50%);
   -webkit-backdrop-filter: blur(30px) saturate(50%);
 }
-.card {
-  display: none;
+
+.card-container {
   position: relative;
   border: 1px solid #313747d5;
-  padding: 40px 60px 120px 60px !important;
+  padding: 40px 80px 80px 80px !important;
   height: 100%;
   border-radius: 25px;
   background-color: rgba(24, 29, 43, 0.5);
@@ -121,8 +138,11 @@ header .graves {
   -ms-user-select: none;
   user-select: none;
 }
+.card {
+  display: none;
+}
 
-header.main-card {
+header.title-card {
   border-top: none;
 }
 
@@ -134,9 +154,6 @@ header.main-card {
   margin-right: 50px;
   margin-bottom: 25px;
   aspect-ratio: 1/1;
-  /* border: 0.5px solid #313747d5; */
-  /* backdrop-filter: blur(1px) saturate(70%);
-  -webkit-backdrop-filter: blur(1px) saturate(70%); */
 }
 .flex h2 {
   margin-top: 5px;
@@ -191,10 +208,8 @@ header.main-card {
   display: block;
 }
 
-.next {
-  position: absolute;
-  bottom: 40px;
-  right: 60px;
+#next {
+  display: flex;
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
@@ -203,10 +218,8 @@ header.main-card {
   -ms-user-select: none;
   user-select: none;
 }
-.prev {
-  position: absolute;
-  bottom: 40px;
-  left: 60px;
+#prev {
+  display: flex;
   font-size: 2rem;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
@@ -215,8 +228,8 @@ header.main-card {
   -ms-user-select: none;
   user-select: none;
 }
-.prev:hover,
-.next:hover {
+#prev:hover,
+#next:hover {
   transform: scale(1.2);
 }
 
@@ -241,6 +254,7 @@ header.main-card {
 
 .nav_arrows {
   display: inline-block;
+  align-self: center;
   border-right: 2.5px solid #ddd;
   border-bottom: 2.5px solid #ddd;
   width: 20px;
@@ -342,21 +356,18 @@ strong:hover {
   transform: scale(1.1);
 }
 
-.card-container {
-  position: relative;
-  height: 100%;
-}
-
 ul {
-  position: absolute;
-  bottom: 35px;
   display: flex;
   list-style: none;
   justify-content: center;
   width: 100%;
-  margin-bottom: 20px;
+  align-items: center;
   z-index: 0;
   pointer-events: none;
+}
+
+.nav_arrows {
+  display: inline-block;
 }
 
 .dots {
@@ -387,12 +398,8 @@ ul {
 
 div > p,
 header > p {
-  line-height: 1.8;
+  line-height: 1.7;
   font-weight: 200;
-}
-
-div > p {
-  margin: 0 10vw;
 }
 
 h1,
@@ -424,24 +431,18 @@ p b {
   .cards {
     padding: 4vh 4vw;
   }
-  .main-card {
+  .title-card {
     margin-top: 10px;
     padding: 25px 50px 80px 50px !important;
     margin-bottom: 40px;
   }
-  .card {
-    padding: 10px 50px 100px 50px !important;
+  .card-container {
+    padding: 25px 50px 25px 50px !important;
   }
-  .next {
-    position: absolute;
-    bottom: 20px;
-    right: 50px;
+  #next {
     font-size: 1.6rem;
   }
-  .prev {
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
+  #prev {
     font-size: 1.6rem;
   }
   .nav_arrows {
@@ -453,16 +454,10 @@ p b {
     width: 10px;
     margin: 0 8px;
   }
-  ul {
-    bottom: 10px;
-  }
   .point {
     font-size: 4rem;
     margin-right: 20px;
     margin-bottom: 10px;
-  }
-  div > p {
-    margin: 0 40px;
   }
   .scroll_indicator {
     margin-top: 10px;
@@ -485,28 +480,22 @@ p b {
   .cards {
     padding: 3vh 4vw;
   }
-  .main-card {
+  .title-card {
     margin-top: 10px;
     padding: 20px 40px 70px 40px !important;
     margin-bottom: 20px;
   }
-  .card {
-    padding: 20px 40px 80px 40px !important;
+  .card-container {
+    padding: 20px 40px 20px 40px !important;
   }
   .flex-img {
     width: 100%;
     margin: 20px 30px;
   }
-  .next {
-    position: absolute;
-    bottom: 15px;
-    right: 40px;
+  #next {
     font-size: 1.3rem;
   }
-  .prev {
-    position: absolute;
-    bottom: 15px;
-    left: 40px;
+  #prev {
     font-size: 1.3rem;
   }
   .nav_arrows {
@@ -518,16 +507,10 @@ p b {
     width: 8px;
     margin: 0 4px;
   }
-  ul {
-    bottom: 5px;
-  }
   .point {
     font-size: 3rem;
     margin-right: 15px;
     margin-bottom: 5px;
-  }
-  div > p {
-    margin: 0 30px;
   }
   .scroll_indicator {
     margin-top: 5px;
@@ -554,24 +537,18 @@ p b {
   .cards {
     padding: 2vh 5vw;
   }
-  .main-card {
+  .title-card {
     margin-top: 10px;
     padding: 10px 20px 60px 20px !important;
     margin-bottom: 10px;
   }
-  .card {
-    padding: 10px 20px 60px 20px !important;
+  .card-container {
+    padding: 10px 20px 10px 20px !important;
   }
-  .next {
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
+  #next {
     font-size: 1.1rem;
   }
-  .prev {
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
+  #prev {
     font-size: 1.1rem;
   }
   .nav_arrows {
@@ -582,12 +559,6 @@ p b {
     height: 6px;
     width: 6px;
     margin: 0 3px;
-  }
-  ul {
-    bottom: 3px;
-  }
-  div > p {
-    margin: 0;
   }
   .scroll_indicator {
     margin-top: 5px;

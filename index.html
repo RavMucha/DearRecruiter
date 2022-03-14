@@ -18,7 +18,7 @@
 
 <body>
   <div class="cards">
-    <header class="main-card">
+    <header class="title-card">
       <img id="logo" src="Assets/Deer.svg" alt="logo" /> <br />
       <p id="p1">It is with great
         grief that I have to inform U about the amount of
@@ -68,7 +68,6 @@
         <p>
           <b>TL;DR:</b> I'm a JavaScript Developer - I do websites and Web Apps.
         </p>
-        <div class="next" onclick="next()">NEXT <span class="nav_arrows forward"></span></div>
       </div>
       <div class="card">
         <div class="flex">
@@ -91,8 +90,7 @@
           <b>TL;DR:</b> I'm a FrontEnd Developer - I might do something on the BackEnd, but I don't, nor want to do
           servers and databases day2day.
         </p>
-        <div class="prev" onclick="prev()"><span class="nav_arrows back"></span> PREV</div>
-        <div class="next" onclick="next()">NEXT <span class="nav_arrows forward"></span></div>
+
       </div>
       <div class="card">
         <div class="flex">
@@ -112,8 +110,7 @@
         <p>
           <b>TL;DR:</b> I won't cut it for Senior React Developer. Send me UI focused job offers and just those.
         </p>
-        <div class="prev" onclick="prev()"><span class="nav_arrows back"></span> PREV</div>
-        <div class="next" onclick="next()">NEXT <span class="nav_arrows forward"></span></div>
+
       </div>
       <div class="card">
         <div class="flex">
@@ -134,8 +131,7 @@
         <p>
           <b>TL;DR:</b> I like WFH. I can come to the office, but on my terms and no other.
         </p>
-        <div class="prev" onclick="prev()"><span class="nav_arrows back"></span> PREV</div>
-        <div class="next" onclick="next()">NEXT <span class="nav_arrows forward"></span></div>
+
       </div>
       <div class="card">
         <div class="flex">
@@ -156,8 +152,7 @@
           <b>HOW
             MUCH</b> they pay - competitive salary, negotiable... Oh, c'mon!
         </p>
-        <div class="prev" onclick="prev()"><span class="nav_arrows back"></span> PREV</div>
-        <div class="next" onclick="next()">NEXT <span class="nav_arrows forward"></span></div>
+
       </div>
       <div class="card">
         <div class="flex">
@@ -176,16 +171,19 @@
             <img class="svg-match" src="Assets/match.svg" alt="Match" />
           </strong>
         </div>
-        <div class="prev" onclick="prev()"><span class="nav_arrows back"></span> PREV</div>
       </div>
-      <ul>
-        <li class="dots active" id="dot-0"></li>
-        <li class="dots" id="dot-1"></li>
-        <li class="dots" id="dot-2"></li>
-        <li class="dots" id="dot-3"></li>
-        <li class="dots" id="dot-4"></li>
-        <li class="dots" id="dot-5"></li>
-      </ul>
+      <nav>
+        <div id="prev" onclick="prev()"><span class="nav_arrows back"></span> PREV</div>
+        <ul>
+          <li class="dots active" id="dot-0"></li>
+          <li class="dots" id="dot-1"></li>
+          <li class="dots" id="dot-2"></li>
+          <li class="dots" id="dot-3"></li>
+          <li class="dots" id="dot-4"></li>
+          <li class="dots" id="dot-5"></li>
+        </ul>
+        <div id="next" onclick="next()">NEXT <span class="nav_arrows forward"></span></div>
+      </nav>
     </div>
   </div>
   <img class="crosses cross" src="Assets/cross.svg" alt="cross" />
