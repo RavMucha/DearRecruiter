@@ -1,6 +1,7 @@
 var count = 0;
 var cards = document.getElementsByClassName("card");
 var dots = document.getElementsByClassName("dots");
+var questions = document.getElementsByClassName("questions");
 gsap.from("#logo", { duration: 1, y: 100, rotationX: 180 });
 gsap.to("#logo", { duration: 1, y: 0, rotationX: 0 });
 gsap.from("#p1", { duration: 1.2, y: 100 });
@@ -70,8 +71,19 @@ function zombie() {
     document.getElementById("dot-" + count).classList.add("active");
     document.getElementsByClassName("card")[count].style.display = "block";
   }, 1500);
+  document.getElementById("next").classList.remove("inactive");
+  document.getElementById("prev").classList.add("inactive");
 }
 
 function redir() {
   window.location.href = "https://rafal-mucha.pl";
+}
+
+function questionsShow(val) {
+  for (q of questions) {
+    q.style.display = "none";
+  }
+  document.getElementById("questions_" + val).style.display = "block";
+  gsap.from("#questions_" + val, { duration: 0.5, y: -15 });
+  gsap.to("#questions_" + val, { duration: 0.5, y: 0 });
 }

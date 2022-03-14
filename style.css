@@ -111,6 +111,13 @@ nav {
   visibility: hidden !important;
 }
 
+.questions {
+  display: none;
+}
+#questions_1 {
+  display: block;
+}
+
 .svg-match {
   width: 100%;
 }
@@ -344,6 +351,19 @@ strong {
   transition: all 0.3s ease-in-out;
 }
 strong:hover {
+  background-color: #313747d5;
+  transform: scale(1.1);
+}
+
+.answer {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 15px 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.answer:hover {
   background-color: #313747d5;
   transform: scale(1.1);
 }

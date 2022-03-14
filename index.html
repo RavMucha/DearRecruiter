@@ -138,7 +138,7 @@
           <div class="point">
             5
           </div>
-          <h2>Wonderfullll job offer for random cheap developer!</h2>
+          <h2>Wonderrrfulll job offer for random cheap developer!</h2>
         </div>
         <div class="flex-img">
           <img class="svg-img" src="Assets/Money.svg" alt="money" />
@@ -159,17 +159,41 @@
           <div class="point">
             6
           </div>
-          <h2>We're OK? Cool, here's my CV:</h2>
+          <h2>We're OK? Cool, just answer me this:</h2>
         </div>
-        <div class="flex-img">
-          <strong onclick="zombie()">
-            <img class="svg-match" src="Assets/homer.svg" alt="Homer" />
-          </strong>
+        <div class="questions" id="questions_1">
+          <p>Do I do Java development?
+            <br>Do I do BackEnd development?
+            <br>Do I want to come back to the office?
+          </p>
+          <div class="flex-img">
+            <b class="answer" onclick="zombie()">
+              Yes
+            </b>
+            <b class="answer" onclick="questionsShow(2)">
+              No
+            </b>
+          </div>
         </div>
-        <div class="flex-img">
-          <strong onclick="redir()">
-            <img class="svg-match" src="Assets/match.svg" alt="Match" />
-          </strong>
+        <div class="questions" id="questions_2">
+          <p>Will you just send me offers that match my experience?
+            <br>Will you send me the full details of the offer?
+          </p>
+          <div class="flex-img">
+            <b class="answer" onclick="questionsShow(3)">
+              Yes
+            </b>
+            <b class="answer" onclick="zombie()">
+              No
+            </b>
+          </div>
+        </div>
+        <div class="questions" id="questions_3">
+          <div class="flex-img">
+            <strong onclick="redir()">
+              <img class="svg-match" src="Assets/match.svg" alt="Match" />
+            </strong>
+          </div>
         </div>
       </div>
       <nav>
