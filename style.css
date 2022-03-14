@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 
 :root {
-  --value: 40px;
+  --value: 10px;
 }
 
 * {
@@ -100,7 +100,7 @@ nav {
   align-content: center;
   justify-content: space-between;
   margin-top: 5vh;
-  margin-bottom: 5px;
+  margin-bottom: var(--value);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
