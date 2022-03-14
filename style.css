@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .cards {
-  padding: 4vh 8vw;
+  padding: 0 8vw 4vh 8vw;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   display: flex;
@@ -441,7 +441,7 @@ p b {
     font-size: 1.8rem;
   }
   .cards {
-    padding: 4vh 4vw;
+    padding: 0 4vw 4vh 4vw;
   }
   .title-card {
     margin-top: 10px;
@@ -491,7 +491,7 @@ p b {
     margin-bottom: 20px;
   }
   .cards {
-    padding: 3vh 4vw;
+    padding: 0 4vw 3vh 4vw;
   }
   .title-card {
     margin-top: 10px;
@@ -546,7 +546,7 @@ p b {
     margin: 20px 1px;
   }
   .cards {
-    padding: 2vh 5vw;
+    padding: 0 5vw 2vh 5vw;
   }
   .title-card {
     margin-top: 10px;

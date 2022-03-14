@@ -15,7 +15,7 @@ document.getElementById("prev").classList.add("inactive");
 
 gsap.from("#bat", { duration: 4, x: 300, y: 300 });
 gsap.to("#bat", { duration: 4, x: 0, y: 0 });
-gsap.to("#bat", { duration: 4.1, opacity: 0, display: "none" });
+gsap.to("#bat", { duration: 4.1, opacity: 0 });
 
 function next() {
   if (count < 5) {
