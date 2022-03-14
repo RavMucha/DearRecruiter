@@ -108,7 +108,7 @@ nav {
 }
 
 .inactive {
-  display: none;
+  visibility: hidden !important;
 }
 
 .svg-match {
@@ -208,7 +208,7 @@ header.title-card {
   display: none;
 }
 
-#first-card {
+#card_0 {
   display: block;
 }
 
