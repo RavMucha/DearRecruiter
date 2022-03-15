@@ -133,7 +133,7 @@ nav {
   height: 100%;
   margin-bottom: 40px;
   border-radius: 25px;
-  background-color: rgba(24, 29, 43, 0.5);
+  background-color: rgba(16, 21, 31, 0.85);
   backdrop-filter: blur(30px) saturate(50%);
   -webkit-backdrop-filter: blur(30px) saturate(50%);
 }
@@ -144,7 +144,7 @@ nav {
   padding: 40px 80px 40px 80px !important;
   height: 100%;
   border-radius: 25px;
-  background-color: rgba(24, 29, 43, 0.5);
+  background-color: rgba(16, 21, 31, 0.85);
   backdrop-filter: blur(30px) saturate(50%);
   -webkit-backdrop-filter: blur(30px) saturate(50%);
   -webkit-user-select: none;
@@ -152,6 +152,16 @@ nav {
   -ms-user-select: none;
   user-select: none;
 }
+
+@supports ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%))) {
+  .title-card {
+    background-color: rgba(24, 29, 43, 0.5);
+  }
+  .card-container {
+    background-color: rgba(24, 29, 43, 0.5);
+  }
+}
+
 .card {
   display: none;
 }
