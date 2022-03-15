@@ -53,6 +53,8 @@ body::-webkit-scrollbar-thumb:hover {
 header #logo {
   width: 50%;
   margin-bottom: 30px;
+  -webkit-animation: logo-scale 15s infinite;
+  animation: logo-scale 15s infinite;
 }
 header .graves {
   position: absolute;
@@ -331,6 +333,28 @@ header.title-card {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes logo-scale {
+  0% {
+    transform: scale(0.99);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.99);
+  }
+}
+@keyframes logo-scale {
+  0% {
+    transform: scale(0.99);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.99);
   }
 }
 #copyright {
