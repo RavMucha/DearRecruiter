@@ -2,20 +2,22 @@ var count = 0;
 var cards = document.getElementsByClassName("card");
 var dots = document.getElementsByClassName("dots");
 var questions = document.getElementsByClassName("questions");
-gsap.from("#logo", { duration: 1, y: 100, rotationX: 180 });
-gsap.to("#logo", { duration: 1, y: 0, rotationX: 0 });
-gsap.from("#p1", { duration: 1.2, y: 100 });
-gsap.to("#p1", { duration: 1.2, y: 0 });
-gsap.from("#p2", { duration: 1.4, y: 100 });
-gsap.to("#p2", { duration: 1.4, y: 0 });
-gsap.from("#p3", { duration: 1.6, y: 100 });
-gsap.to("#p3", { duration: 1.6, y: 0 });
-
+if (!sessionStorage.hasOwnProperty("firstCome")) {
+  gsap.from("#logo", { duration: 1, y: 100, rotationX: 180 });
+  gsap.to("#logo", { duration: 1, y: 0, rotationX: 0 });
+  gsap.from("#p1", { duration: 1.2, y: 100 });
+  gsap.to("#p1", { duration: 1.2, y: 0 });
+  gsap.from("#p2", { duration: 1.4, y: 100 });
+  gsap.to("#p2", { duration: 1.4, y: 0 });
+  gsap.from("#p3", { duration: 1.6, y: 100 });
+  gsap.to("#p3", { duration: 1.6, y: 0 });
+  sessionStorage.setItem("firstCome", "firstServed");
+}
 document.getElementById("prev").classList.add("inactive");
 
-gsap.from("#bat", { duration: 4, x: 300, y: 300 });
+gsap.from("#bat", { duration: 4, x: 300, y: 200 });
 gsap.to("#bat", { duration: 4, x: 0, y: 0 });
-gsap.to("#bat", { duration: 4.1, opacity: 0 });
+gsap.to("#bat", { duration: 4, opacity: 0 });
 
 function next() {
   if (count < cards.length - 1) {
