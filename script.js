@@ -18,10 +18,10 @@ gsap.to("#bat", { duration: 4, x: 0, y: 0 });
 gsap.to("#bat", { duration: 4.1, opacity: 0 });
 
 function next() {
-  if (count < 5) {
+  if (count < cards.length - 1) {
     count++;
   }
-  if (count == 5) {
+  if (count == cards.length - 1) {
     document.getElementById("next").classList.add("inactive");
   }
   document.getElementById("prev").classList.remove("inactive");
@@ -44,7 +44,7 @@ function prev() {
   if (count == 0) {
     document.getElementById("prev").classList.add("inactive");
   }
-  if ((count, 5)) {
+  if (count < cards.length - 1) {
     document.getElementById("next").classList.remove("inactive");
   }
   for (c of cards) {
