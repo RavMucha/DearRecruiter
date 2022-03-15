@@ -152,7 +152,17 @@ nav {
 }
 
 @supports (
-  ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%)))
+  (
+    (
+      (
+        (
+          (
+            ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%)))
+          )
+        )
+      )
+    )
+  )
 ) {
   .title-card {
     background-color: rgba(24, 29, 43, 0.5);
@@ -449,6 +459,10 @@ p b {
     margin-bottom: 5px;
     font-size: 1.8rem;
   }
+  header #logo {
+    width: 60%;
+    margin-bottom: 25px;
+  }
   .cards {
     padding: 0 4vw 4vh 4vw;
   }
@@ -499,7 +513,7 @@ p b {
     font-size: 1.5rem;
   }
   header #logo {
-    width: 70%;
+    width: 75%;
     margin-bottom: 20px;
   }
   .cards {
