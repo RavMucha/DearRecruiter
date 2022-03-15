@@ -176,10 +176,6 @@ header.title-card {
   font-size: 2.25rem;
 }
 
-.crosses {
-  opacity: 0.9;
-}
-
 .cross {
   position: fixed;
   top: 10px;
