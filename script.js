@@ -15,9 +15,9 @@ if (!sessionStorage.hasOwnProperty("firstCome")) {
 }
 document.getElementById("prev").classList.add("inactive");
 
-gsap.from("#bat", { duration: 4, x: 300, y: 200 });
-gsap.to("#bat", { duration: 4, x: 0, y: 0 });
-gsap.to("#bat", { duration: 4, opacity: 0 });
+gsap.from("#bat", { duration: 3, x: 300, y: 60 });
+gsap.to("#bat", { duration: 3, x: 0, y: 0 });
+gsap.to("#bat", { duration: 3, opacity: 0 });
 
 function next() {
   if (count < cards.length - 1) {

@@ -53,8 +53,6 @@ body::-webkit-scrollbar-thumb:hover {
 header #logo {
   width: 50%;
   margin-bottom: 30px;
-  -webkit-animation: logo-scale 30s infinite;
-  animation: logo-scale 30s infinite;
 }
 header .graves {
   position: absolute;
@@ -153,7 +151,9 @@ nav {
   user-select: none;
 }
 
-@supports ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%))) {
+@supports (
+  ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%)))
+) {
   .title-card {
     background-color: rgba(24, 29, 43, 0.5);
   }
@@ -342,40 +342,6 @@ header.title-card {
     opacity: 1;
   }
 }
-@-webkit-keyframes logo-scale {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-1deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes logo-scale {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-1deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 #copyright {
   opacity: 0.75;
   display: flex;
@@ -514,6 +480,9 @@ p b {
   }
   #bat {
     z-index: 5;
+  }
+  .bat-lair {
+    height: 32px;
   }
   .scroll_indicator {
     margin-top: 10px;
