@@ -98,11 +98,12 @@ header .graves {
 }
 
 nav {
+  border-top: 1px dashed #313747d5;
   display: flex;
   align-content: center;
   justify-content: space-between;
-  margin-top: 5vh;
-  margin-bottom: var(--value);
+  margin-top: 25px;
+  padding-top: 25px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -140,7 +141,7 @@ nav {
 .card-container {
   position: relative;
   border: 1px solid #313747d5;
-  padding: 40px 80px 80px 80px !important;
+  padding: 40px 80px 40px 80px !important;
   height: 100%;
   border-radius: 25px;
   background-color: rgba(24, 29, 43, 0.5);
@@ -481,7 +482,7 @@ p b {
     margin-bottom: 40px;
   }
   .card-container {
-    padding: 25px 50px 25px 50px !important;
+    padding: 25px 50px 30px 50px !important;
   }
   #next,
   #prev {
@@ -531,7 +532,7 @@ p b {
     margin-bottom: 20px;
   }
   .card-container {
-    padding: 20px 40px 20px 40px !important;
+    padding: 20px 40px 30px 40px !important;
   }
   .flex-img {
     width: 100%;
@@ -586,7 +587,7 @@ p b {
     margin-bottom: 10px;
   }
   .card-container {
-    padding: 10px 20px 10px 20px !important;
+    padding: 10px 20px 20px 20px !important;
   }
   #next,
   #prev {
