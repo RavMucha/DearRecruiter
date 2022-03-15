@@ -2,9 +2,9 @@ var count = 0;
 var cards = document.getElementsByClassName("card");
 var dots = document.getElementsByClassName("dots");
 var questions = document.getElementsByClassName("questions");
+gsap.from("#logo", { duration: 1, y: 50, rotationX: 180 });
+gsap.to("#logo", { duration: 1, y: 0, rotationX: 0 });
 if (!sessionStorage.hasOwnProperty("firstCome")) {
-  gsap.from("#logo", { duration: 1, y: 100, rotationX: 180 });
-  gsap.to("#logo", { duration: 1, y: 0, rotationX: 0 });
   gsap.from("#p1", { duration: 1.2, y: 100 });
   gsap.to("#p1", { duration: 1.2, y: 0 });
   gsap.from("#p2", { duration: 1.4, y: 100 });
