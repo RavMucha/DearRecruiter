@@ -125,7 +125,8 @@ nav {
 
 .title-card {
   border: 1px solid #313747d5;
-  margin-top: 50px;
+  border-top: none;
+  margin-top: 30px;
   padding: 40px 80px 80px 80px !important;
   width: 100% !important;
   height: 100%;
@@ -164,10 +165,6 @@ nav {
 
 .card {
   display: none;
-}
-
-header.title-card {
-  border-top: none;
 }
 
 .point {
@@ -347,7 +344,7 @@ header.title-card {
   display: flex;
   justify-content: space-around;
   font-size: 0.5em;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 strong {
