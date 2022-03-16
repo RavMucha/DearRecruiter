@@ -40,6 +40,7 @@ function next() {
   document.getElementsByClassName("card")[count].style.display = "block";
   gsap.from("#card_" + count, { duration: 0.5, x: -20 });
   gsap.to("#card_" + count, { duration: 0.5, x: 0 });
+  document.getElementById("card-container").scrollIntoView();
 }
 
 function prev() {
@@ -62,6 +63,7 @@ function prev() {
   document.getElementsByClassName("card")[count].style.display = "block";
   gsap.from("#card_" + count, { duration: 0.5, x: 20 });
   gsap.to("#card_" + count, { duration: 0.5, x: 0 });
+  document.getElementById("card-container").scrollIntoView();
 }
 
 function zombie() {

@@ -161,7 +161,7 @@ nav {
   -webkit-backdrop-filter: blur(30px) saturate(50%);
 }
 
-.card-container {
+#card-container {
   position: relative;
   border: 1px solid #313747d5;
   padding: 40px 80px 40px 80px !important;
@@ -177,16 +177,12 @@ nav {
 }
 
 @supports (
-  (
-    (
-      ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%)))
-    )
-  )
+  ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%)))
 ) {
   .title-card {
     background-color: rgba(24, 29, 43, 0.5);
   }
-  .card-container {
+  #card-container {
     background-color: rgba(24, 29, 43, 0.5);
   }
 }
@@ -491,7 +487,7 @@ p b {
     padding: 25px 50px 80px 50px !important;
     margin-bottom: 40px;
   }
-  .card-container {
+  #card-container {
     padding: 25px 50px 30px 50px !important;
   }
   #next,
@@ -544,7 +540,7 @@ p b {
     padding: 20px 40px 70px 40px !important;
     margin-bottom: 20px;
   }
-  .card-container {
+  #card-container {
     padding: 20px 40px 30px 40px !important;
   }
   .flex-img {
@@ -599,7 +595,7 @@ p b {
     padding: 10px 20px 60px 20px !important;
     margin-bottom: 10px;
   }
-  .card-container {
+  #card-container {
     padding: 10px 20px 25px 20px !important;
   }
   #next,
