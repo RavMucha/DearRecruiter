@@ -1,4 +1,5 @@
 var count = 0;
+var isPlaying = false;
 var cards = document.getElementsByClassName("card");
 var dots = document.getElementsByClassName("dots");
 var questions = document.getElementsByClassName("questions");
@@ -100,3 +101,17 @@ function questionsShow(val) {
     scale: 1,
   });
 }
+
+function Tunes() {
+  isPlaying ? half_life.pause() : half_life.play();
+}
+half_life.onplaying = function () {
+  isPlaying = true;
+  document.getElementById("music-btn").style.display = "none";
+  document.getElementById("pause-btn").style.display = "inline-block";
+};
+half_life.onpause = function () {
+  isPlaying = false;
+  document.getElementById("music-btn").style.display = "inline-block";
+  document.getElementById("pause-btn").style.display = "none";
+};
