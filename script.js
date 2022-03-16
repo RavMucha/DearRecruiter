@@ -63,6 +63,8 @@ function prev() {
 }
 
 function zombie() {
+  isPlaying = true;
+  Tunes();
   document.getElementById("zombie").style.display = "block";
   scream.play();
   scream.volume = 1.0;
