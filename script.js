@@ -108,9 +108,8 @@ function questionsShow(val) {
 function Tunes() {
   isPlaying ? half_life.pause() : half_life.play();
   isPlaying
-    ? (crab.src = "Assets/Money.svg")
-    : (crab.src = "Assets/crab_mono.gif");
-  isPlaying ? (crab.style.width = "") : (crab.style.width = "auto");
+    ? ((crab.src = "Assets/Money.svg"), (crab.style.width = ""))
+    : ((crab.src = "Assets/crab_mono.gif"), (crab.style.width = "298px"));
 }
 half_life.onplaying = function () {
   isPlaying = true;
