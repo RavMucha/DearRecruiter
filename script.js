@@ -3,6 +3,7 @@ var isPlaying = false;
 var cards = document.getElementsByClassName("card");
 var dots = document.getElementsByClassName("dots");
 var questions = document.getElementsByClassName("questions");
+var crab = document.getElementById("money-crab");
 gsap.from("#logo", { duration: 1, y: 50, rotationX: 180 });
 gsap.to("#logo", { duration: 1, y: 0, rotationX: 0 });
 if (!sessionStorage.hasOwnProperty("firstCome")) {
@@ -106,6 +107,10 @@ function questionsShow(val) {
 
 function Tunes() {
   isPlaying ? half_life.pause() : half_life.play();
+  isPlaying
+    ? (crab.src = "Assets/Money.svg")
+    : (crab.src = "Assets/crab_mono.gif");
+  isPlaying ? (crab.style.width = "") : (crab.style.width = "auto");
 }
 half_life.onplaying = function () {
   isPlaying = true;
@@ -116,4 +121,6 @@ half_life.onpause = function () {
   isPlaying = false;
   document.getElementById("music-btn").style.display = "inline-block";
   document.getElementById("pause-btn").style.display = "none";
+  crab.src = "Assets/Money.svg";
+  crab.style.width = "auto";
 };
