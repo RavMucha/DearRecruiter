@@ -108,8 +108,8 @@ function questionsShow(val) {
 function Tunes() {
   isPlaying ? half_life.pause() : half_life.play();
   isPlaying
-    ? ((crab.src = "Assets/Money.svg"), (crab.style.width = ""))
-    : ((crab.src = "Assets/crab_mono.gif"), (crab.style.width = "298px"));
+    ? ((crab.src = "Assets/Money.svg"), (crab.style.maxWidth = "auto"))
+    : ((crab.src = "Assets/crab_mono.gif"), (crab.style.maxWidth = "299px"));
 }
 half_life.onplaying = function () {
   isPlaying = true;
@@ -121,5 +121,5 @@ half_life.onpause = function () {
   document.getElementById("music-btn").style.display = "inline-block";
   document.getElementById("pause-btn").style.display = "none";
   crab.src = "Assets/Money.svg";
-  crab.style.width = "";
+  crab.style.maxWidth = "auto";
 };
