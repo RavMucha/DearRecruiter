@@ -111,7 +111,7 @@ function questionsShow(val) {
 }
 
 function Tunes() {
-  isPlaying ? half_life.pause() : half_life.play();
+  isPlaying ? half_life.pause() : (half_life.play(), (half_life.volume = 0.2));
   isPlaying
     ? ((crab.style.display = "none"), (money.style.display = "inline-block"))
     : ((money.style.display = "none"), (crab.style.display = "inline-block"));
