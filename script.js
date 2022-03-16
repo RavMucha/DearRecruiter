@@ -3,7 +3,8 @@ var isPlaying = false;
 var cards = document.getElementsByClassName("card");
 var dots = document.getElementsByClassName("dots");
 var questions = document.getElementsByClassName("questions");
-var crab = document.getElementById("money-crab");
+var money = document.getElementById("money-crab");
+var crab = document.getElementById("crab-money");
 gsap.from("#logo", { duration: 1, y: 50, rotationX: 180 });
 gsap.to("#logo", { duration: 1, y: 0, rotationX: 0 });
 if (!sessionStorage.hasOwnProperty("firstCome")) {
@@ -64,8 +65,10 @@ function prev() {
 }
 
 function zombie() {
-  isPlaying = true;
-  Tunes();
+  isPlaying = false;
+  half_life.pause();
+  crab.style.display = "none";
+  money.style.display = "inline-block";
   document.getElementById("zombie").style.display = "block";
   scream.play();
   scream.volume = 1.0;
@@ -108,8 +111,8 @@ function questionsShow(val) {
 function Tunes() {
   isPlaying ? half_life.pause() : half_life.play();
   isPlaying
-    ? ((crab.src = "Assets/Money.svg"), (crab.style.maxWidth = "auto"))
-    : ((crab.src = "Assets/crab_mono.gif"), (crab.style.maxWidth = "299px"));
+    ? ((crab.style.display = "none"), (money.style.display = "inline-block"))
+    : ((money.style.display = "none"), (crab.style.display = "inline-block"));
 }
 half_life.onplaying = function () {
   isPlaying = true;
@@ -120,6 +123,6 @@ half_life.onpause = function () {
   isPlaying = false;
   document.getElementById("music-btn").style.display = "inline-block";
   document.getElementById("pause-btn").style.display = "none";
-  crab.src = "Assets/Money.svg";
-  crab.style.maxWidth = "auto";
+  crab.style.display = "none";
+  money.style.display = "inline-block";
 };
