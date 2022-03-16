@@ -122,5 +122,5 @@ half_life.onpause = function () {
   document.getElementById("music-btn").style.display = "inline-block";
   document.getElementById("pause-btn").style.display = "none";
   crab.src = "Assets/Money.svg";
-  crab.style.width = "auto";
+  crab.style.width = "";
 };
