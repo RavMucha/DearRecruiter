@@ -7,8 +7,8 @@ var money = document.getElementById("money-crab");
 var crab = document.getElementById("crab-money");
 gsap.fromTo(
   "#logo",
-  { y: 50, rotationX: 180 },
-  { duration: 1, y: 0, rotationX: 0 }
+  { y: 50, rotationX: 75 },
+  { duration: 2, y: 0, rotationX: 0 }
 );
 if (!sessionStorage.hasOwnProperty("firstCome")) {
   gsap.fromTo("#p1", { y: 100 }, { duration: 1.2, y: 0 });
@@ -21,7 +21,36 @@ document.getElementById("prev").classList.add("inactive");
 gsap.fromTo(
   "#bat",
   { x: 300, y: 60, opacity: 1 },
-  { duration: 4, x: 0, y: 0, opacity: 0 }
+  {
+    duration: 4,
+    x: 0,
+    y: 0,
+    opacity: 0,
+    onComplete() {
+      gsap.fromTo(
+        "#bat",
+        { x: 250, y: 50, opacity: 1 },
+        {
+          duration: 3,
+          x: 150,
+          y: 0,
+          opacity: 0,
+          onComplete() {
+            gsap.fromTo(
+              "#bat",
+              { x: 200, y: 100, opacity: 1 },
+              {
+                duration: 2,
+                x: 0,
+                y: 0,
+                opacity: 0,
+              }
+            );
+          },
+        }
+      );
+    },
+  }
 );
 function next() {
   if (count < cards.length - 1) {
