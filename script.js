@@ -160,7 +160,7 @@ function Tunes() {
               scale: 1.2,
             },
             {
-              duration: 0.2,
+              duration: 0.1,
               ease: "back.out(1.8)",
               scale: 1,
             }
