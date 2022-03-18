@@ -157,7 +157,7 @@ function Tunes() {
           gsap.fromTo(
             "#crab-money",
             {
-              scale: 1.5,
+              scale: 1.2,
             },
             {
               duration: 0.2,
@@ -188,7 +188,7 @@ half_life.onpause = function () {
     {
       duration: 0.1,
       ease: "power1.out",
-      scale: 1.5,
+      scale: 1.3,
       onComplete() {
         crab.style.display = "none";
         gsap.fromTo(
