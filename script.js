@@ -20,30 +20,46 @@ document.getElementById("prev").classList.add("inactive");
 
 gsap.fromTo(
   "#bat",
-  { x: 300, y: 60, opacity: 1 },
+  { x: 300, y: 60, opacity: 1, rotation: -30 },
   {
     duration: 4,
     x: 0,
     y: 0,
     opacity: 0,
+    rotation: 0,
     onComplete() {
       gsap.fromTo(
         "#bat",
-        { x: 250, y: 50, opacity: 1 },
+        { x: 250, y: 50, opacity: 1, rotation: 0 },
         {
           duration: 3,
           x: 150,
           y: 0,
           opacity: 0,
+          rotation: -15,
           onComplete() {
             gsap.fromTo(
               "#bat",
-              { x: 200, y: 100, opacity: 1 },
+              { x: 200, y: 100, opacity: 1, rotation: 20 },
               {
                 duration: 2,
                 x: 0,
                 y: 0,
                 opacity: 0,
+                rotation: 0,
+                onComplete() {
+                  gsap.fromTo(
+                    "#bat",
+                    { x: 100, y: 100, opacity: 1, rotation: 60 },
+                    {
+                      duration: 2,
+                      x: 200,
+                      y: 0,
+                      opacity: 0,
+                      rotation: 70,
+                    }
+                  );
+                },
               }
             );
           },
