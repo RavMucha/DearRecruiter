@@ -188,7 +188,7 @@ half_life.onpause = function () {
     {
       duration: 0.1,
       ease: "power1.out",
-      scale: 1.3,
+      scale: 1.2,
       onComplete() {
         crab.style.display = "none";
         gsap.fromTo(
