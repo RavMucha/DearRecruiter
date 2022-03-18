@@ -142,34 +142,7 @@ function questionsShow(val) {
 
 function Tunes() {
   isPlaying ? half_life.pause() : (half_life.play(), (half_life.volume = 0.2));
-  if (isPlaying) {
-    gsap.fromTo(
-      "#crab-money",
-      {
-        scale: 1,
-      },
-      {
-        duration: 0.2,
-        ease: "power1.out",
-        scale: 0,
-        onComplete() {
-          crab.style.display = "none";
-          gsap.fromTo(
-            "#money-crab",
-            {
-              scale: 0,
-            },
-            {
-              duration: 0.4,
-              ease: "back.out(1.8)",
-              scale: 1,
-            }
-          );
-          money.style.display = "inline-block";
-        },
-      }
-    );
-  } else {
+  if (!isPlaying) {
     gsap.fromTo(
       "#money-crab",
       {
@@ -184,10 +157,10 @@ function Tunes() {
           gsap.fromTo(
             "#crab-money",
             {
-              scale: 0,
+              scale: 3,
             },
             {
-              duration: 0.4,
+              duration: 0.2,
               ease: "back.out(1.8)",
               scale: 1,
             }
@@ -213,9 +186,9 @@ half_life.onpause = function () {
       scale: 1,
     },
     {
-      duration: 0.2,
+      duration: 0.1,
       ease: "power1.out",
-      scale: 0,
+      scale: 2,
       onComplete() {
         crab.style.display = "none";
         gsap.fromTo(
