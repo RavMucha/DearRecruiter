@@ -92,7 +92,7 @@ header .graves {
   display: flex;
   align-content: center;
   justify-content: center;
-  margin: 40px;
+  margin: 20px 40px 40px 40px;
 }
 
 #music {
@@ -188,7 +188,13 @@ nav {
                   (
                     (
                       (
-                        ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%)))
+                        (
+                          (
+                            (
+                              ((-webkit-backdrop-filter: blur(30px) saturate(50%)) or (backdrop-filter: blur(30px) saturate(50%)))
+                            )
+                          )
+                        )
                       )
                     )
                   )
