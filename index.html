@@ -1,278 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta author="Rafał Mucha" />
-    <meta
-      name="keywords"
-      content="Recruitment info, recruiter information, Curriculum Vitae, CV, Rafał Mucha, Krakow, Web Development, IT, resume"
-    />
-    <meta
-      name="description"
-      content="Just a website with some info to read BEFORE you call me with a job offer"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <title>Dear Recruiter</title>
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://dear-recruiter.netlify.app/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Dear Recruiter" />
-    <meta
-      property="og:description"
-      content="Just a website with some info to read BEFORE you call me with a job offer"
-    />
-    <meta
-      property="og:image"
-      content="https://dear-recruiter.netlify.app/Assets/lilogo.jpg"
-    />
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="dear-recruiter.netlify.app" />
-    <meta
-      property="twitter:url"
-      content="https://dear-recruiter.netlify.app/"
-    />
-    <meta name="twitter:title" content="Dear Recruiter" />
-    <meta
-      name="twitter:description"
-      content="Just a website with some info to read BEFORE you call me with a job offer"
-    />
-    <meta
-      name="twitter:image"
-      content="https://dear-recruiter.netlify.app/Assets/lilogo.jpg"
-    />
-    <script>
-      var scream = new Audio("./Assets/GIRLS.wav");
-      var half_life = new Audio("./Assets/BlackMesa.mp3");
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta author="Rafał Mucha" />
+  <meta name="keywords"
+    content="Recruitment info, recruiter information, Curriculum Vitae, CV, Rafał Mucha, Krakow, Web Development, IT, resume" />
+  <meta name="description" content="Just a website with some info to read BEFORE you call me with a job offer" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <title>Dear Recruiter</title>
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://dear-recruiter.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dear Recruiter" />
+  <meta property="og:description" content="Just a website with some info to read BEFORE you call me with a job offer" />
+  <meta property="og:image" content="https://dear-recruiter.netlify.app/Assets/lilogo.jpg" />
 
-  <body>
-    <div class="cards">
-      <div class="bat-lair">
-        <img id="bat" src="./Assets/bat.svg" width="50px" alt="Bat" />
-      </div>
-      <header class="title-card">
-        <img id="logo" src="Assets/Deer.svg" alt="logo" /> <br />
-        <p id="p1">
-          It is with great grief that I have to inform U about the amount of
-          <b>LinkedIn</b>
-          messages, mails, texts and phone calls I receive, with offers not
-          matching my field of expertise or experience - this has gotten very
-          much out of hand.
-        </p>
-        <br />
-        <p id="p2">
-          So, here's a website.
-          <b
-            >Before you text me, call me, send me anything, or come knocking on
-            my door</b
-          >, please, at least skimm the below.
-        </p>
-        <br />
-        <p id="p3">
-          If your job offer doesn't match up with this, then let's skip the
-          interaction, cuz there's no point.
-        </p>
-        <br />
-        <div class="scroll_indicator">
-          <a href="#card-container">
-            <span class="scroll_arrows first"></span>
-            <span class="scroll_arrows second"></span>
-            <span class="scroll_arrows third"></span>
-          </a>
-        </div>
-        <img class="graves" src="Assets/graves.svg" alt="graves" />
-      </header>
-      <div id="card-container">
-        <div id="card_0" class="card">
-          <div class="flex">
-            <div class="point">1</div>
-            <h2>
-              The relation between JAVA and JavaScript is similar to this:
-            </h2>
-          </div>
-          <div class="flex-img">
-            <img class="svg-img-2" src="Assets/car.svg" alt="car" />
-            <img class="svg-img-2" src="Assets/carpet.svg" alt="carpet" />
-          </div>
-          <p>
-            Both have the word "JAVA" in the name, same as the word "CAR"
-            appears in the word "CARPET"... and that's about it. Knowing one
-            doesn't mean that you know the other, both have different uses.
-          </p>
-          <br />
-          <p>
-            <b>TL;DR:</b> I'm a JavaScript Developer - I do websites and Web
-            Apps.
-          </p>
-        </div>
-        <div id="card_1" class="card">
-          <div class="flex">
-            <div class="point">2</div>
-            <h2>Can a taxi driver fix a truck?</h2>
-          </div>
-          <div class="flex-img">
-            <img class="svg-img" src="Assets/fix.svg" alt="car_fix" />
-          </div>
-          <p>
-            Maybe, but chances are slim. He might change a tire, do a quick fix,
-            but he probably won't swap the entire engine. Same goes for
-            BackEnds; don't send BackEnd Dev job offers to FrontEnd Devs!
-          </p>
-          <br />
-          <p>
-            <b>TL;DR:</b> I'm a FrontEnd Developer - I might do something on the
-            BackEnd, but I don't, nor want to do servers and databases day2day.
-          </p>
-        </div>
-        <div id="card_2" class="card">
-          <div class="flex">
-            <div class="point">3</div>
-            <h2>Jack of all trades, master of... I don't know.</h2>
-          </div>
-          <div class="flex-img">
-            <img class="svg-img" src="Assets/Jack.svg" alt="pirate" />
-          </div>
-          <p>
-            I have experience in Vue, Angular and jQuery, did some React but not
-            much. Did ASP.NET too for, like, 2 years - not a fan, personally. I
-            mainly focus on CSS and prefer working on the UI and UX, the logic
-            is secondary. Do I want to do .NET? No and what do U mean by .NET?
-            There's a lot of stuff under that umbrella... PowerBI, SAP,
-            ServiceNOW? Nope, old story.
-          </p>
-          <br />
-          <p>
-            <b>TL;DR:</b> I won't cut it for Senior React Developer. Send me UI
-            focused job offers and just those.
-          </p>
-        </div>
-        <div id="card_3" class="card">
-          <div class="flex">
-            <div class="point">4</div>
-            <h2>I'm glued to my desk and not moving from it.</h2>
-          </div>
-          <div class="flex-img">
-            <img class="svg-img" src="Assets/Glue.svg" alt="desk" />
-          </div>
-          <p>
-            Willing to relocate? <b>No.</b> <br />
-            U sure? Good money, free food, models in bikinis, relocation
-            package, stock options? <b>Still no.</b><br />
-            Hybrid work? <b>No-ish.</b><br />
-            Also, generally prefer <b>CoE</b>s over <b>B2B</b> contracts, FYA.
-          </p>
-          <br />
-          <p>
-            <b>TL;DR:</b> I like WFH. I can come to the office, but on my terms
-            and no other.
-          </p>
-        </div>
-        <div id="card_4" class="card">
-          <div class="flex">
-            <div class="point">5</div>
-            <h2>Wonderrrfulll job offer for random developer!</h2>
-          </div>
-          <div class="flex-img">
-            <img
-              id="money-crab"
-              class="svg-img"
-              src="Assets/Money.svg"
-              alt="money"
-            />
-            <img id="crab-money" src="Assets/crab_mono.gif" alt="headcrab" />
-          </div>
-          <p>
-            Have basic info: <br />
-            <b>WHO</b> is hiring - No gambling companies, businesses of
-            <span id="music" onclick="Tunes()"
-              >questionable ethics
-              <img id="music-btn" src="Assets/play.svg" alt="Play" /><img
-                id="pause-btn"
-                src="Assets/pause.svg"
-                alt="Pause" /></span
-            >, start-ups on life support etc., <br />
-            <b>WHAT</b> is the tech stack - "Angular!" is not an answer; listing
-            all the 36 languages that the company uses is another spectrum of
-            also not an answer, <br />
-            <b>WHAT</b> I need to build - buzzwords, like
-            <i
-              >"AI driven platform, based on a Microservices approach, to
-              enchance our ML capabilities... bla bla"</i
-            >
-            are not an answer,<br />
-            <b>HOW MUCH</b> they pay - competitive salary, negotiable... Oh,
-            c'mon!
-          </p>
-        </div>
-        <div id="card_5" class="card">
-          <div class="flex">
-            <div class="point">6</div>
-            <h2>Almost there, just answer me this:</h2>
-          </div>
-          <div class="questions" id="questions_1">
-            <p>
-              Do I do Java development? <br />Do I do BackEnd development?
-              <br />Do I want to come back to the office?
-            </p>
-            <div class="flex-img">
-              <b class="answer" onclick="zombie()"> Yes </b>
-              <b class="answer" onclick="questionsShow(2)"> No </b>
-            </div>
-          </div>
-          <div class="questions" id="questions_2">
-            <p>
-              Will you just send me offers that match my experience? <br />Will
-              you send me the full details of the offer?
-            </p>
-            <div class="flex-img">
-              <b class="answer" onclick="questionsShow(3)"> Yes </b>
-              <b class="answer" onclick="zombie()"> No </b>
-            </div>
-          </div>
-          <div class="questions" id="questions_3">
-            <div class="flex-img">
-              <strong onclick="redir()">
-                <img class="svg-match" src="Assets/match.svg" alt="Match" />
-              </strong>
-            </div>
-          </div>
-        </div>
-        <nav>
-          <div id="prev" onclick="prev()">
-            <span class="nav_arrows back"></span> PREV
-          </div>
-          <ul>
-            <li class="dots active" id="dot-0"></li>
-            <li class="dots" id="dot-1"></li>
-            <li class="dots" id="dot-2"></li>
-            <li class="dots" id="dot-3"></li>
-            <li class="dots" id="dot-4"></li>
-            <li class="dots" id="dot-5"></li>
-          </ul>
-          <div id="next" onclick="next()">
-            NEXT <span class="nav_arrows forward"></span>
-          </div>
-        </nav>
-      </div>
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="dear-recruiter.netlify.app" />
+  <meta property="twitter:url" content="https://dear-recruiter.netlify.app/" />
+  <meta name="twitter:title" content="Dear Recruiter" />
+  <meta name="twitter:description"
+    content="Just a website with some info to read BEFORE you call me with a job offer" />
+  <meta name="twitter:image" content="https://dear-recruiter.netlify.app/Assets/lilogo.jpg" />
+  <script>
+    var scream = new Audio("./Assets/GIRLS.wav");
+    var half_life = new Audio("./Assets/BlackMesa.mp3");
+  </script>
+</head>
+
+<body>
+  <div class="cards">
+    <div class="bat-lair">
+      <img id="bat" src="./Assets/bat.svg" width="50px" alt="Bat" />
     </div>
-    <img class="crosses cross" src="Assets/cross.svg" alt="cross" />
-    <img class="crosses cross2" src="Assets/cross.svg" alt="cross" />
-    <img class="crosses cross3" src="Assets/cross.svg" alt="cross" />
-    <img class="crosses cross4" src="Assets/cross.svg" alt="cross" />
-    <div class="container">
-      <div class="inner">
-        <div class="inner2"></div>
+    <header class="title-card">
+      <img id="logo" src="Assets/Deer.svg" alt="logo" /> <br />
+      <p id="p1">
+        It is with great grief that I have to inform U about the amount of
+        <b>LinkedIn</b>
+        messages, mails, texts and phone calls I receive, with offers not
+        matching my field of expertise or experience - this has gotten very
+        much out of hand.
+      </p>
+      <br />
+      <p id="p2">
+        So, here's a website.
+        <b>Before you text me, call me, send me anything, or come knocking on
+          my door</b>, please, at least skimm the below.
+      </p>
+      <br />
+      <p id="p3">
+        If your job offer doesn't match up with this, then let's skip the
+        interaction, cuz there's no point.
+      </p>
+      <br />
+      <div class="scroll_indicator">
+        <a href="#card-container">
+          <span class="scroll_arrows first"></span>
+          <span class="scroll_arrows second"></span>
+          <span class="scroll_arrows third"></span>
+        </a>
       </div>
+      <img class="graves" src="Assets/graves.svg" alt="graves" />
+    </header>
+    <div id="card-container">
+      <div id="card_0" class="card">
+        <div class="flex">
+          <div class="point">1</div>
+          <h2>
+            The relation between JAVA and JavaScript is similar to this:
+          </h2>
+        </div>
+        <div class="flex-img">
+          <img class="svg-img-2" src="Assets/car.svg" alt="car" />
+          <img class="svg-img-2" src="Assets/carpet.svg" alt="carpet" />
+        </div>
+        <p>
+          Both have the word "JAVA" in the name, same as the word "CAR"
+          appears in the word "CARPET"... and that's about it. Knowing one
+          doesn't mean that you know the other, both have different uses.
+        </p>
+        <br />
+        <p>
+          <b>TL;DR:</b> I'm a JavaScript Developer - I do websites and Web
+          Apps.
+        </p>
+      </div>
+      <div id="card_1" class="card">
+        <div class="flex">
+          <div class="point">2</div>
+          <h2>Can a taxi driver fix a truck?</h2>
+        </div>
+        <div class="flex-img">
+          <img class="svg-img" src="Assets/fix.svg" alt="car_fix" />
+        </div>
+        <p>
+          Maybe, but chances are slim. He might change a tire, do a quick fix,
+          but he probably won't swap the entire engine. Same goes for
+          BackEnds; don't send BackEnd Dev job offers to FrontEnd Devs!
+        </p>
+        <br />
+        <p>
+          <b>TL;DR:</b> I'm a FrontEnd Developer - I might do something on the
+          BackEnd, but I don't, nor want to do servers and databases day2day.
+        </p>
+      </div>
+      <div id="card_2" class="card">
+        <div class="flex">
+          <div class="point">3</div>
+          <h2>Jack of all trades, master of... I don't know.</h2>
+        </div>
+        <div class="flex-img">
+          <img class="svg-img" src="Assets/Jack.svg" alt="pirate" />
+        </div>
+        <p>
+          I have experience in Vue, Angular and jQuery, did some React but not
+          much. Did ASP.NET too for, like, 2 years - not a fan, personally. I
+          mainly focus on CSS and prefer working on the UI and UX, the logic
+          is secondary. Do I want to do .NET? No and what do U mean by .NET?
+          There's a lot of stuff under that umbrella... PowerBI, SAP,
+          ServiceNOW? Nope, old story.
+        </p>
+        <br />
+        <p>
+          <b>TL;DR:</b> I won't cut it for Senior React Developer. Send me UI
+          focused job offers and just those.
+        </p>
+      </div>
+      <div id="card_3" class="card">
+        <div class="flex">
+          <div class="point">4</div>
+          <h2>I'm glued to my desk and not moving from it.</h2>
+        </div>
+        <div class="flex-img">
+          <img class="svg-img" src="Assets/Glue.svg" alt="desk" />
+        </div>
+        <p>
+          Willing to relocate? <b>No.</b> <br />
+          U sure? Good money, free food, models in bikinis, relocation
+          package, stock options? <b>Still no.</b><br />
+          Hybrid work? <b>No-ish.</b><br />
+          Also, generally prefer <b>CoE</b>s over <b>B2B</b> contracts, FYA.
+        </p>
+        <br />
+        <p>
+          <b>TL;DR:</b> I like WFH. I can come to the office, but on my terms
+          and no other.
+        </p>
+      </div>
+      <div id="card_4" class="card">
+        <div class="flex">
+          <div class="point">5</div>
+          <h2>Wonderrrfulll job offer for random developer!</h2>
+        </div>
+        <div class="flex-img">
+          <img id="money-crab" class="svg-img" src="Assets/Money.svg" alt="money" />
+          <img id="crab-money" src="Assets/crab_mono.gif" alt="headcrab" />
+        </div>
+        <p>
+          Have basic info: <br />
+          <b>WHO</b> is hiring - No gambling companies, businesses of
+          <span id="music" onclick="Tunes()">questionable ethics
+            <img id="music-btn" src="Assets/play.svg" alt="Play" /><img id="pause-btn" src="Assets/pause.svg"
+              alt="Pause" /></span>, start-ups on life support etc.<br />
+          What is the <b>TECH STACK</b> - "Angular!" is not an answer; listing
+          all the 36 languages that the company uses is another spectrum of
+          also not an answer.<br />
+          <b>WHAT</b> I need to build - buzzwords, like
+          <i>"AI driven platform, based on a Microservices approach, to
+            enhance our ML capabilities... bla bla"</i>
+          are not an answer.<br />
+          How much they <b>PAY</b> - competitive salary, negotiable... Oh,
+          c'mon!
+        </p>
+      </div>
+      <div id="card_5" class="card">
+        <div class="flex">
+          <div class="point">6</div>
+          <h2>Almost there, just answer me this:</h2>
+        </div>
+        <div class="questions" id="questions_1">
+          <p>
+            Do I do Java development? <br />Do I do BackEnd development?
+            <br />Do I want to come back to the office?
+          </p>
+          <div class="flex-img">
+            <b class="answer" onclick="zombie()"> Yes </b>
+            <b class="answer" onclick="questionsShow(2)"> No </b>
+          </div>
+        </div>
+        <div class="questions" id="questions_2">
+          <p>
+            Will you just send me offers that match my experience? <br />Will
+            you send me the full details of the offer?
+          </p>
+          <div class="flex-img">
+            <b class="answer" onclick="questionsShow(3)"> Yes </b>
+            <b class="answer" onclick="zombie()"> No </b>
+          </div>
+        </div>
+        <div class="questions" id="questions_3">
+          <div class="flex-img">
+            <strong onclick="redir()">
+              <img class="svg-match" src="Assets/match.svg" alt="Match" />
+            </strong>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div id="prev" onclick="prev()">
+          <span class="nav_arrows back"></span> PREV
+        </div>
+        <ul>
+          <li class="dots active" id="dot-0"></li>
+          <li class="dots" id="dot-1"></li>
+          <li class="dots" id="dot-2"></li>
+          <li class="dots" id="dot-3"></li>
+          <li class="dots" id="dot-4"></li>
+          <li class="dots" id="dot-5"></li>
+        </ul>
+        <div id="next" onclick="next()">
+          NEXT <span class="nav_arrows forward"></span>
+        </div>
+      </nav>
     </div>
-    <footer id="copyright">&copy; 2022 Rafał Mucha</footer>
-    <img id="zombie" src="/Assets/zombie.jpg" alt="zombie" />
-    <script src="./script.js"></script>
-  </body>
+  </div>
+  <img class="crosses cross" src="Assets/cross.svg" alt="cross" />
+  <img class="crosses cross2" src="Assets/cross.svg" alt="cross" />
+  <img class="crosses cross3" src="Assets/cross.svg" alt="cross" />
+  <img class="crosses cross4" src="Assets/cross.svg" alt="cross" />
+  <div class="container">
+    <div class="inner">
+      <div class="inner2"></div>
+    </div>
+  </div>
+  <footer id="copyright">&copy; 2022 Rafał Mucha</footer>
+  <img id="zombie" src="/Assets/zombie.jpg" alt="zombie" />
+  <script src="./script.js"></script>
+</body>
+
 </html>
